@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="edu.happy.coustomnfc.MainActivity" >
+
+    <ImageView
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nfc_notice" />
+
+    <ImageView
+        android:id="@+id/btn_done"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        android:src="@drawable/done" />
+
+    <RelativeLayout
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_done"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="35dp"
+        android:visibility="invisible"
+        android:background="@drawable/dialog" >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:text="牛奶"
+         />
+   <TextView
+         android:id="@+id/corrdinate"
+         android:layout_width="40dp"
+         android:layout_height="20dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:visibility="invisible"
+         android:text="TextView" />
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/corrdinate"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/corrdinate"
+        android:text="产地：" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/area"
+        android:layout_below="@+id/area"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:text="价格：" />
+    <TextView
+        android:id="@+id/nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/price"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:text="营养价值：" />
+    <TextView
+        android:id="@+id/leftDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:text="还有10天过期！" />
+
+    <TextView
+        android:id="@+id/text_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/price"
+        android:layout_toRightOf="@+id/corrdinate"
+        android:text="内蒙古"
+        android:textSize="20sp" />
+    
+     <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nutrition"
+        android:layout_toRightOf="@+id/corrdinate"
+        android:text="20元"
+        android:textSize="20sp" />
+     
+     <TextView
+        android:id="@+id/text_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leftDay"
+        android:layout_toRightOf="@+id/corrdinate"
+        android:text="20KPV"
+        android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
